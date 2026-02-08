@@ -1,11 +1,16 @@
 # Install the dummy Xorg driver
+```bash
 sudo apt update
 sudo apt install xserver-xorg-video-dummy
+```
 
 # Create the Xorg dummy config
+```bash
 sudo nano /etc/X11/xorg.conf
+```
 
 # Paste exactly this (safe, minimal, 1080p):
+```bash
 Section "Device"
     Identifier "DummyDevice"
     Driver "dummy"
@@ -28,13 +33,19 @@ Section "Screen"
         Modes "1920x1080"
     EndSubSection
 EndSection
+```
 
 # Make sure Wayland is disabled (important)
+```bash
 sudo nano /etc/gdm3/custom.conf
+```
 
 ## Ensure this line exists and is not commented:
+```bash
 WaylandEnable=false
+```
 
 # Reboot
+```bash
 sudo reboot
-
+```
