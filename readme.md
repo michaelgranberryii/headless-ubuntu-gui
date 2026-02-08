@@ -9,7 +9,7 @@ sudo apt install xserver-xorg-video-dummy
 sudo nano /etc/X11/xorg.conf
 ```
 
-# Paste exactly this (safe, minimal, 1080p):
+### Paste exactly this (safe, minimal, 1080p):
 ```bash
 Section "Device"
     Identifier "DummyDevice"
@@ -40,7 +40,7 @@ EndSection
 sudo nano /etc/gdm3/custom.conf
 ```
 
-## Ensure this line exists and is not commented:
+### Ensure this line exists and is not commented:
 ```bash
 WaylandEnable=false
 ```
