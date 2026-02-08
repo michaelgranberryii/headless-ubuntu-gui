@@ -1,3 +1,10 @@
+# Minimal “server + desktop” setup (pro move)
+sudo apt install ubuntu-server
+sudo apt install xfce4 xfce4-goodies lightdm
+
+# Select lightdm, then press Enter.
+Wait for gui selection
+
 # Install the dummy Xorg driver
 ```bash
 sudo apt update
